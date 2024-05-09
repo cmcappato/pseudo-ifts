@@ -1,0 +1,58 @@
+{
+    "inicio": {
+        "prefix": "init",
+        "body": [
+            "INICIO",
+            "\t",
+            "FIN"
+        ],
+        "description": "Bloque del programa"
+    },
+    "si-finsi": {
+        "prefix": "si",
+        "body": [
+            "SI (${1:condicion}) ENTONCES",
+            "\t",
+            "FINSI"
+        ],
+        "description": "Bloque SI simple"
+    },
+    "si-sino-finsi": {
+        "prefix": "sino",
+        "body": [
+            "SI (${1:condicion}) ENTONCES",
+            "\t",
+            "SINO",
+            "\t",
+            "FINSI"
+        ],
+        "description": "Bloque SI con bifurcación"
+    },
+    "para": {
+        "prefix": "para",
+        "body": [
+            "PARA ${2:variable} DESDE ${3:inicio} HASTA ${4:fin} CON CADA PASO ${1:contador} HACER",
+            "\t",
+            "FINPARA"
+        ],
+        "description": "Bloque PARA"
+    },
+    "mientras": {
+        "prefix": "mientras",
+        "body": [
+            "MIENTRAS (${1:condicion}) HACER",
+            "\t",
+            "REPETIR"
+        ],
+        "description": "Bloque MIENTRAS (solo ingresa si se cumple la condición)"
+    },
+    "hacer-mientras": {
+        "prefix": "hacer",
+        "body": [
+            "HACER",
+            "\t",
+            "MIENTRAS (${1:condicion})"
+        ],
+        "description": "Bloque MIENTRAS (se ejecuta siempre la primera vez)"
+    }
+}

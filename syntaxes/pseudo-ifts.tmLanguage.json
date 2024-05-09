@@ -2,20 +2,16 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "pseudo-ifts",
 	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
+		{"include": "#keywords"},
+		{"include": "#strings"}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.pseudo-ifts",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(INICIO|FIN|LEER|ESCRIBIR|SI|SINO|ENTONCES|FINSI|AND|OR|Y|O|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS)\\b"
 			}]
-		},
+		},		
 		"strings": {
 			"name": "string.quoted.double.pseudo-ifts",
 			"begin": "\"",
@@ -28,5 +24,5 @@
 			]
 		}
 	},
-	"scopeName": ""
+	"scopeName": "source.algo"
 }

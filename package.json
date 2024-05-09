@@ -7,6 +7,9 @@
   "displayName": "pseudo-ifts",
   "description": "Pseudocodigo IFTS 18 - Técnicas de Programación",
   "version": "0.0.1",
+	"repository": {
+		"url": "https://github.com/cmcappato/pseudo-ifts"
+	},
   "engines": {
     "vscode": "^1.89.0"
   },
@@ -22,7 +25,7 @@
     }],
     "grammars": [{
       "language": "pseudo-ifts",
-      "scopeName": "",
+      "scopeName": "source.algo",
       "path": "./syntaxes/pseudo-ifts.tmLanguage.json"
     }],
 		"snippets": [
