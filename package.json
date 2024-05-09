@@ -7,9 +7,9 @@
   "displayName": "Pseudocodigo IFTS",
   "description": "Pseudocodigo IFTS 18 - Técnicas de Programación",
   "version": "0.0.2",
-	"repository": {
-		"url": "https://github.com/cmcappato/pseudo-ifts"
-	},
+  "repository": {
+    "url": "https://github.com/cmcappato/pseudo-ifts"
+  },
   "engines": {
     "vscode": "^1.89.0"
   },
@@ -17,22 +17,33 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "pseudo-ifts",
-      "aliases": ["pseudo-ifts", "pseudo-ifts"],
-      "extensions": [".psc",".algo",".pseudo"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "pseudo-ifts",
-      "scopeName": "source.algo",
-      "path": "./syntaxes/pseudo-ifts.tmLanguage.json"
-    }],
-		"snippets": [
-			{
-				"language": "pseudo-ifts",
-				"path": "./snippets/snippets.json"
-			}
-		]
+    "languages": [
+      {
+        "id": "pseudo-ifts",
+        "aliases": [
+          "pseudo-ifts",
+          "pseudo-ifts"
+        ],
+        "extensions": [
+          ".psc",
+          ".algo",
+          ".pseudo"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pseudo-ifts",
+        "scopeName": "source.algo",
+        "path": "./syntaxes/pseudo-ifts.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "pseudo-ifts",
+        "path": "./snippets/snippets.json"
+      }
+    ]
   }
 }

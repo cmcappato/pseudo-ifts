@@ -10,7 +10,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.pseudo-ifts",
-				"match": "\\b(INICIO|FIN|LEER|ESCRIBIR|ALGORITMO|FINALGORITMO)\\b"
+				"match": "(?i)\\b(INICIO|FIN|LEER|ESCRIBIR|ALGORITMO|FINALGORITMO)\\b"
 			}]
 		},		
 		"strings": {
@@ -24,15 +24,15 @@
 				},
 				{
 					"name": "keyword.operator",
-					"match": "\\b(?i:(==|=|!=|<|>|<=|>=))\\b"
+					"match": "(?i)\\b(==|=|!=|<|>|<=|>=|**)\\b"
 				},
 				{
 					"name": "storage.type",
-					"match": "\\b(?i:(SI|SINO|ENTONCES|FINSI|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|REPETIR))\\b"
+					"match": "(?i)\\b(SI|SINO|ENTONCES|FINSI|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|REPETIR)\\b"
 				},				
 				{
 					"name": "keyword.control",
-					"match": "\\b(AND|OR|Y|O)\\b"
+					"match": "(?i)\\b(AND|OR|Y|O)\\b"
 				}
 			]
 		}
@@ -49,12 +49,5 @@
 			}
 		]
 	},
-	
-	"onEnterRules": [
-		{
-		"beforeText": "^\\s*(?:INICIO|ENTONCES|SINO|PARA|MIENTRAS|HACER).*?:\\s*$",
-		"action": { "indent": "indent" }
-		}
-	]	,
 	"scopeName": "source.algo"
 }
