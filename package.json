@@ -1,0 +1,35 @@
+{
+  "name": "pseudo-ifts",
+  "author": {
+    "name": "Carolina Cappato"
+  },
+  "publisher": "Carolina Cappato",
+  "displayName": "pseudo-ifts",
+  "description": "Pseudocodigo IFTS 18 - Técnicas de Programación",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pseudo-ifts",
+      "aliases": ["pseudo-ifts", "pseudo-ifts"],
+      "extensions": [".psc",".algo",".pseudo"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pseudo-ifts",
+      "scopeName": "",
+      "path": "./syntaxes/pseudo-ifts.tmLanguage.json"
+    }],
+		"snippets": [
+			{
+				"language": "pseudo-ifts",
+				"path": "./snippets/snippets.json"
+			}
+		]
+  }
+}
