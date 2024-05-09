@@ -4,6 +4,7 @@
 	"patterns": [
 		{"include": "#keywords"},
 		{"include": "#strings"},
+		{"include": "#string"},
 		{"include": "#numbers"}
 	],
 	"repository": {
@@ -11,8 +12,24 @@
 			"patterns": [{
 				"name": "keyword.control.pseudo-ifts",
 				"match": "(?i)\\b(INICIO|FIN|LEER|ESCRIBIR|ALGORITMO|FINALGORITMO)\\b"
+			},
+			{
+				"name": "constant.character.escape.pseudo-ifts",
+				"match": "\\\\."
+			},
+			{
+				"name": "keyword.operator",
+				"match": "(?i)\\b(==|=|!=|<|>|<=|>=|**)\\b"
+			},
+			{
+				"name": "storage.type",
+				"match": "(?i)\\b(SI|SINO|ENTONCES|FINSI|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|REPETIR)\\b"
+			},				
+			{
+				"name": "keyword.control",
+				"match": "(?i)\\b(AND|OR|Y|O)\\b"
 			}]
-		},		
+		},
 		"strings": {
 			"name": "string.quoted.double.pseudo-ifts",
 			"begin": "\"",
@@ -21,33 +38,32 @@
 				{
 					"name": "constant.character.escape.pseudo-ifts",
 					"match": "\\\\."
+				}
+			]
+		},
+		"string": {
+			"name": "string.quoted.single.pseudo.ifts",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pseudo.ifts",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.integer.pseudo-ifts",
+					"match": "\\b[0-9]+(?![0-9]*\\.)\\b"
 				},
 				{
-					"name": "keyword.operator",
-					"match": "(?i)\\b(==|=|!=|<|>|<=|>=|**)\\b"
-				},
-				{
-					"name": "storage.type",
-					"match": "(?i)\\b(SI|SINO|ENTONCES|FINSI|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|REPETIR)\\b"
-				},				
-				{
-					"name": "keyword.control",
-					"match": "(?i)\\b(AND|OR|Y|O)\\b"
+					"name": "constant.numeric.float.pseudo-ifts",
+					"match": "\\b[0-9]+\\.[0-9]+\\b"
 				}
 			]
 		}
-	},
-	"numbers": {
-		"patterns": [
-			{
-				"name": "constant.numeric.integer.pseudo-ifts",
-				"match": "\\b[0-9]+(?![0-9]*\\.)\\b"
-			},
-			{
-				"name": "constant.numeric.float.pseudo-ifts",
-				"match": "\\b[0-9]+\\.[0-9]+\\b"
-			}
-		]
 	},
 	"scopeName": "source.algo"
 }
