@@ -4,9 +4,9 @@
     "name": "Carolina Cappato"
   },
   "publisher": "cm-cappato",
-  "displayName": "pseudo-ifts",
+  "displayName": "Pseudocodigo IFTS",
   "description": "Pseudocodigo IFTS 18 - Técnicas de Programación",
-  "version": "0.0.1",
+  "version": "0.0.2",
 	"repository": {
 		"url": "https://github.com/cmcappato/pseudo-ifts"
 	},

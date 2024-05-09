@@ -3,13 +3,14 @@
 	"name": "pseudo-ifts",
 	"patterns": [
 		{"include": "#keywords"},
-		{"include": "#strings"}
+		{"include": "#strings"},
+		{"include": "#numbers"}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.pseudo-ifts",
-				"match": "\\b(INICIO|FIN|LEER|ESCRIBIR|SI|SINO|ENTONCES|FINSI|AND|OR|Y|O|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS)\\b"
+				"match": "\\b(INICIO|FIN|LEER|ESCRIBIR|ALGORITMO|FINALGORITMO)\\b"
 			}]
 		},		
 		"strings": {
@@ -20,9 +21,40 @@
 				{
 					"name": "constant.character.escape.pseudo-ifts",
 					"match": "\\\\."
+				},
+				{
+					"name": "keyword.operator",
+					"match": "\\b(?i:(==|=|!=|<|>|<=|>=))\\b"
+				},
+				{
+					"name": "storage.type",
+					"match": "\\b(?i:(SI|SINO|ENTONCES|FINSI|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|REPETIR))\\b"
+				},				
+				{
+					"name": "keyword.control",
+					"match": "\\b(AND|OR|Y|O)\\b"
 				}
 			]
 		}
 	},
+	"numbers": {
+		"patterns": [
+			{
+				"name": "constant.numeric.integer.pseudo-ifts",
+				"match": "\\b[0-9]+(?![0-9]*\\.)\\b"
+			},
+			{
+				"name": "constant.numeric.float.pseudo-ifts",
+				"match": "\\b[0-9]+\\.[0-9]+\\b"
+			}
+		]
+	},
+	
+	"onEnterRules": [
+		{
+		"beforeText": "^\\s*(?:INICIO|ENTONCES|SINO|PARA|MIENTRAS|HACER).*?:\\s*$",
+		"action": { "indent": "indent" }
+		}
+	]	,
 	"scopeName": "source.algo"
 }
