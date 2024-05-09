@@ -21,7 +21,7 @@
 				},
 				{
 					"name": "keyword.control.pseudo-ifts",
-					"match": "(?i)\\b(INICIO|FIN|LEER|ESCRIBIR|ALGORITMO|FINALGORITMO)\\b"
+					"match": "\\b(?i:(INICIO|FIN|LEER|ESCRIBIR|ALGORITMO|FINALGORITMO))\\b"
 				},
 				{
 					"name": "constant.character.escape.pseudo-ifts",
@@ -29,15 +29,15 @@
 				},
 				{
 					"name": "keyword.operator",
-					"match": "(?i)\\b(==|=|!=|<|>|<=|>=|**)\\b"
+					"match": "\\b(?i:(==|=|!=|<|>|<=|>=|**))\\b"
 				},
 				{
 					"name": "storage.type",
-					"match": "(?i)\\b(SI|SINO|ENTONCES|FINSI|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|REPETIR)\\b"
+					"match": "\\b(?i:(SI|SINO|ENTONCES|FINSI|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|REPETIR))\\b"
 				},				
 				{
 					"name": "keyword.control",
-					"match": "(?i)\\b(AND|OR|Y|O)\\b"
+					"match": "\\b(?i:(AND|OR|Y|O))\\b"
 				}
 			]
 		},
