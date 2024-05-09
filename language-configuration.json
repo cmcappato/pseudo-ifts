@@ -18,12 +18,7 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"],
-        ["INICIO", "FIN"],
-        ["SI", "FINSI"],
-        ["PARA", "FINPARA"],
-        ["HACER", "MIENTRAS"],
-        ["MIENTRAS", "REPETIR"]
-
+        ["INICIO", "FIN"]
     ],
     // symbols that can be used to surround a selection
     "surroundingPairs": [

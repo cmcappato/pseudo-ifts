@@ -9,26 +9,37 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.pseudo-ifts",
-				"match": "(?i)\\b(INICIO|FIN|LEER|ESCRIBIR|ALGORITMO|FINALGORITMO)\\b"
-			},
-			{
-				"name": "constant.character.escape.pseudo-ifts",
-				"match": "\\\\."
-			},
-			{
-				"name": "keyword.operator",
-				"match": "(?i)\\b(==|=|!=|<|>|<=|>=|**)\\b"
-			},
-			{
-				"name": "storage.type",
-				"match": "(?i)\\b(SI|SINO|ENTONCES|FINSI|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|REPETIR)\\b"
-			},				
-			{
-				"name": "keyword.control",
-				"match": "(?i)\\b(AND|OR|Y|O)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "comment.line",
+					"match": "//.*$"
+				},
+				{
+					"name": "comment.block",
+					"begin": "\\/\\*",
+					"end": "\\*\\/"
+				},
+				{
+					"name": "keyword.control.pseudo-ifts",
+					"match": "(?i)\\b(INICIO|FIN|LEER|ESCRIBIR|ALGORITMO|FINALGORITMO)\\b"
+				},
+				{
+					"name": "constant.character.escape.pseudo-ifts",
+					"match": "\\\\."
+				},
+				{
+					"name": "keyword.operator",
+					"match": "(?i)\\b(==|=|!=|<|>|<=|>=|**)\\b"
+				},
+				{
+					"name": "storage.type",
+					"match": "(?i)\\b(SI|SINO|ENTONCES|FINSI|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|REPETIR)\\b"
+				},				
+				{
+					"name": "keyword.control",
+					"match": "(?i)\\b(AND|OR|Y|O)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.pseudo-ifts",
