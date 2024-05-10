@@ -2,18 +2,10 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "pseudo-ifts",
 	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		},
-		{
-			"include": "#string"
-		},
-		{
-			"include": "#numbers"
-		}
+		{"include": "#keywords"},
+		{"include": "#strings"},
+		{"include": "#string"},
+		{"include": "#numbers"}
 	],
 	"repository": {
 		"keywords": {
@@ -29,7 +21,7 @@
 				},
 				{
 					"name": "keyword.control.pseudo-ifts",
-					"match": "(?i:\\b:(INICIO|FIN|LEER|ESCRIBIR|ALGORITMO|FINALGORITMO)\\b)"
+					"match": "(?i)\\b(INICIO|FIN|LEER|ESCRIBIR|ALGORITMO|FINALGORITMO)\\b"
 				},
 				{
 					"name": "constant.character.escape.pseudo-ifts",
@@ -37,11 +29,11 @@
 				},
 				{
 					"name": "keyword.operator.comparison.pseudo-ifts",
-					"match": "(?i:\\b(==|=|!=|<|>|<=|>=|**|AND|OR|Y|O)\\b)"
+					"match": "(?i)\\b(==|=|!=|<|>|<=|>=|**|AND|OR|Y|O)\\b"
 				},
 				{
 					"name": "storage.type.pseudo-ifts",
-					"match": "(?i:\\b(SI|SINO|ENTONCES|FINSI|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|REPETIR)\\b)"
+					"match": "(?i)\\b(SI|SINO|ENTONCES|FINSI|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|REPETIR)\\b"
 				}
 			]
 		},

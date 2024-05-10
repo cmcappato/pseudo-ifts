@@ -6,7 +6,7 @@
   "publisher": "cm-cappato",
   "displayName": "Pseudocodigo IFTS",
   "description": "Pseudocodigo IFTS 18 - Técnicas de Programación",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "repository": {
     "url": "https://github.com/cmcappato/pseudo-ifts"
   },
@@ -21,7 +21,9 @@
       {
         "id": "pseudo-ifts",
         "aliases": [
-          "pseudo-ifts"
+          "pseudo-ifts",
+          "pseudocodigo",
+          "pseudo"
         ],
         "extensions": [
           ".psc",
