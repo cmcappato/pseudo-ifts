@@ -9,7 +9,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.pseudo-ifts",
-				"match": "\\b(INICIO|FIN|LEER|ESCRIBIR|SI|SINO|ENTONCES|FINSI|AND|OR|Y|O|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS)\\b"
+				"match": "(?:\\b(INICIO|FIN|LEER|ESCRIBIR|SI|SINO|ENTONCES|FINSI|AND|OR|Y|O|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS)\\b)"
 			}]
 		},		
 		"strings": {
