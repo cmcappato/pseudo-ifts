@@ -17,8 +17,7 @@
         ["[", "]"],
         ["(", ")"],
         ["\"", "\""],
-        ["'", "'"],
-        ["INICIO", "FIN"]
+        ["'", "'"]
     ],
     // symbols that can be used to surround a selection
     "surroundingPairs": [
@@ -26,7 +25,6 @@
         ["[", "]"],
         ["(", ")"],
         ["\"", "\""],
-        ["'", "'"],
-        ["INICIO", "FIN"]
+        ["'", "'"]
     ]	
 }
