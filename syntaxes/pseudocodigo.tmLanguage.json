@@ -20,41 +20,41 @@
 					"end": "\\*\\/"
 				},
 				{
-					"name": "keyword.control.pseudo-ifts",
+					"name": "keyword.control",
 					"match": "\\b(INICIO|FIN|LEER|ESCRIBIR|ALGORITMO|FINALGORITMO)\\b"
 				},
 				{
-					"name": "constant.character.escape.pseudo-ifts",
+					"name": "constant.character.escape",
 					"match": "\\\\."
 				},
 				{
-					"name": "keyword.operator.comparison.pseudo-ifts",
+					"name": "keyword.operator.comparison",
 					"match": "\\b(==|=|!=|<|>|<=|>=|**|AND|OR|Y|O)\\b"
 				},
 				{
-					"name": "storage.type.pseudo-ifts",
+					"name": "storage.type",
 					"match": "\\b(SI|SINO|ENTONCES|FINSI|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|REPETIR)\\b"
 				}
 			]
 		},
 		"strings": {
-			"name": "string.quoted.double.pseudo-ifts",
+			"name": "string.quoted.double",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.pseudo-ifts",
+					"name": "constant.character.escape",
 					"match": "\\\\."
 				}
 			]
 		},
 		"string": {
-			"name": "string.quoted.single.pseudo.ifts",
+			"name": "string.quoted.single",
 			"begin": "'",
 			"end": "'",
 			"patterns": [
 				{
-					"name": "constant.character.escape.pseudo.ifts",
+					"name": "constant.character.escape",
 					"match": "\\\\."
 				}
 			]
@@ -62,11 +62,11 @@
 		"numbers": {
 			"patterns": [
 				{
-					"name": "constant.numeric.integer.pseudo-ifts",
+					"name": "constant.numeric.integer",
 					"match": "\\b[0-9]+(?![0-9]*\\.)\\b"
 				},
 				{
-					"name": "constant.numeric.float.pseudo-ifts",
+					"name": "constant.numeric.float",
 					"match": "\\b[0-9]+\\.[0-9]+\\b"
 				}
 			]
