@@ -8,6 +8,15 @@
         ],
         "description": "Bloque del programa"
     },
+    "algoritmo": {
+		"prefix": "algoritmo",
+		"body": [
+			"Algoritmo ${1:nombre}",
+			"\t",
+			"FinAlgoritmo"
+		],
+		"description": "Bloque del programa"
+	},
     "si-finsi": {
         "prefix": "si",
         "body": [
