@@ -9,7 +9,11 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.pseudo-ifts",
-				"match": "(?:\\b(INICIO|FIN|LEER|ESCRIBIR|SI|SINO|ENTONCES|FINSI|AND|OR|Y|O|CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS)\\b)"
+				"match": "(?:\\b(INICIO|FIN|LEER|ESCRIBIR|SI|SINO|ENTONCES|FINSI||CON CADA PASO|HACER|DESDE|HASTA|PARA|FINPARA|MIENTRAS|FINMIENTRAS|ALGORITMO|FINALGORITMO)\\b)"
+			},
+			{
+				"name": "keyword.operator.comparison.pseudo-ifts",
+				"match": "\\b(==|=|!=|<|>|<=|>=|**|AND|OR|Y|O)\\b"
 			}]
 		},		
 		"strings": {
